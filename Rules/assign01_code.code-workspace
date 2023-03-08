@@ -1,0 +1,56 @@
+{
+	"folders": [
+		{
+			"name": "assign01_code",
+			"path": "../.."
+		},
+		{
+			"path": "../../../assign03_code"
+		},
+		{
+			"path": "../../../LectureCode"
+		},
+		{
+			"path": "../../../../../OneDrive - IL State University/Documents/IT279/Assignment08"
+		},
+		{
+			"path": "../../../../lec16_code (3)/lec16_code"
+		},
+		{
+			"path": "../../../../lec15_code (2)/lec15_code"
+		},
+		{
+			"path": "../../../../SocketCodes (2)"
+		},
+		{
+			"path": "../../../../Gillan_hw04"
+		},
+		{
+			"path": "../../../../Program02Part2"
+		},
+		{
+			"path": "../../../../Lect26"
+		},
+		{
+			"path": "../../../../Gillan_Aneel_program_ec"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"xutility": "cpp",
+			"system_error": "cpp",
+			"xlocale": "cpp",
+			"vector": "cpp",
+			"xstring": "cpp",
+			"iostream": "cpp",
+			"queue": "cpp",
+			"stack": "cpp",
+			"ostream": "cpp",
+			"tuple": "c",
+			"utility": "c",
+			"algorithm": "c",
+			"iterator": "c",
+			"xhash": "c"
+		}
+	}
+}
