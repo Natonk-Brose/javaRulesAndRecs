@@ -48,10 +48,12 @@ public class BankAccount implements Cloneable{
         //}
     }
 
-    public BankAccount()
+    public BankAccount(int num, String nm)
     {
         balance = 100.0;
         dateCreated = new Date();
+        name = nm;
+        accountNo = num;
     }
 
     /**
@@ -152,6 +154,9 @@ public class BankAccount implements Cloneable{
         
     }
 
+    /**
+     * Multiplies current balance by corresponding interest rate
+     */
     public void addInterest()
     {
         if (balance > 10000)
@@ -174,6 +179,14 @@ public class BankAccount implements Cloneable{
         {
             balance = balance * interestRates[0];
         }
+    }
+
+    /**
+     * Returns formatted string of account details
+     */
+    public String toString()
+    {
+        return "Name: " + name + "\nAccount Number " + accountNo + "\nBalance: $" + balance + "\nDate Account Opened: " + dateCreated + "\n";
     }
 }
 
