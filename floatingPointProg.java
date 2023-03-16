@@ -138,7 +138,6 @@ public class floatingPointProg {
 
             fileName = filter(fileName);
             file2 = new File(fileName);
-            //  Thomas check stuff for pattern matching :)
             //File file1 = new File("input1.txt");
             //File file2 = new File("input2.txt");
 
