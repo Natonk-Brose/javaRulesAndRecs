@@ -8,6 +8,7 @@ import java.util.Date;
 
 /** 
  * Class that represents a client's bank account. Maintians the clients name, account number, and balance
+ * ENV06-J: Production code must not contain debugging entry points
  */
 public class BankAccount implements Cloneable{
 
@@ -19,6 +20,8 @@ public class BankAccount implements Cloneable{
             //return SSN; <-- HORRIBLE IDEA, DO NOT DO THIS!!
             return getSocialSecurity();
         }
+        
+        //ENV06-J: Do not add a main method to the the BankAccount class. This would create a backdoor for attackers to enter our program
         
     }
 
