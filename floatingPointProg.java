@@ -135,7 +135,6 @@ public class floatingPointProg {
                     isValid = true;
                 }
             }
-
             fileName = filter(fileName);
             file2 = new File(fileName);
             //File file1 = new File("input1.txt");
@@ -214,6 +213,7 @@ public class floatingPointProg {
             fileReader1.close();
             fileReader2.close();
             sc.close();
+            Runtime.getRuntime().exit(1); //FIO14-J: Perform proper cleanup at program termination
 
         } catch (FileNotFoundException e) {
             System.out.println("file not found");
