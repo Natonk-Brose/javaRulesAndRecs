@@ -65,7 +65,7 @@ public class BankAccount implements Cloneable{
     {
         final BankAccount clone = (BankAccount) super.clone();
         clone.getAccountNo();
-        return super.clone(); //By calling super.clone() rather than just clone(), we guarantee that the correct object class is cloned.
+        return super.clone(); //MET53-J: By calling super.clone() rather than just clone(), we guarantee that the correct object class is cloned.
     }
 
     public double getBalance()
