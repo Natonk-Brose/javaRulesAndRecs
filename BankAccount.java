@@ -58,13 +58,14 @@ public class BankAccount implements Cloneable{
 
     /**
      * Clone method that clones our class object
-     * MET06-J: Do not invoke overridable methods in clone() 
+     * MET06-J: Do not invoke overridable methods in clone()
+     * MET53-J: Ensure that the clone() method calls super.clone()
      */
     public Object clone() throws CloneNotSupportedException
     {
         final BankAccount clone = (BankAccount) super.clone();
         clone.getAccountNo();
-        return clone();
+        return super.clone(); //By calling super.clone() rather than just clone(), we guarantee that the correct object class is cloned.
     }
 
     public double getBalance()
