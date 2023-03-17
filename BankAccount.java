@@ -10,7 +10,7 @@ import java.util.Date;
  * Class that represents a client's bank account. Maintians the clients name, account number, and balance
  * ENV06-J: Production code must not contain debugging entry points
  */
-public class BankAccount implements Cloneable{
+public class BankAccount implements Cloneable, Serializable{
 
     private String SSN; // just for showing the next subclass
     public class BankAccountSSN{ // SER05: Do not serialize instances of inner classes
@@ -128,9 +128,10 @@ public class BankAccount implements Cloneable{
      * Increases balance by depoAmount
      * @param deopAmount The amount to increase balance by
      */
-    public void deposit(double depoAmount)
+    public double deposit(double depoAmount) // MET54: always provide feedback about the resulting value of a method
     {
         balance += depoAmount;
+        return balance;
     }
 
     /**
@@ -139,7 +140,7 @@ public class BankAccount implements Cloneable{
      * @return 0 if the withdraw was successful, -1 if the withdraw was unsuccessful due to the balance not being
      * greater than or equal to 0.0 if the withdraw occured
      */
-    public int withdraw(double withdrawAmount)
+    public int withdraw(double withdrawAmount) // MET54: always provide feedback about the resulting value of a method
     {
         
         int returnVal;
