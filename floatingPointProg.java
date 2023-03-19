@@ -211,12 +211,11 @@ public class floatingPointProg {
 
             }
             
-
+           //FIO14-J: Perform proper cleanup at program termination
             fileReader1.close();
             fileReader2.close();
             sc.close();
-            Runtime.getRuntime().exit(1); //FIO14-J: Perform proper cleanup at program termination
-
+           
         } catch (FileNotFoundException e) {
             System.out.println("file not found");
         }
