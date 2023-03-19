@@ -30,6 +30,7 @@ public class BankAccount implements Cloneable, Serializable{
     }
 
     //OBJ01-J: Limit accessibility of fields 
+    //DCL50-J: Use visually distinct identifiers
     private double balance;
     private String name;
     private int accountNo;
