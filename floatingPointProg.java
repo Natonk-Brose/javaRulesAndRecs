@@ -8,7 +8,6 @@ import java.util.regex.Pattern;
 import java.lang.Math;
 import java.text.Normalizer;
 import java.text.Normalizer.Form;
-import java.util.regex.*;
 
 /**
   * Class that has main to get input values from two files, 
