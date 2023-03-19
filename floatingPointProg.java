@@ -27,6 +27,8 @@ public class floatingPointProg {
         //NUM02-J: Ensure that division and remainder operations do not result in divide-by-zero errors 
         // (array.length used to calculate the average)
         //MET00-J: Validate method arguments 
+        //ERR08-J: Do not catch NullPointerException or any of its ancestors
+        //ENV06-J: Production code must not contain debugging entry points
         if (array == null || array.length == 0) 
         {
             return -9999999.0;
