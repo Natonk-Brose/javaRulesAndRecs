@@ -53,12 +53,12 @@ public class BankAccount implements Cloneable, Serializable{
         //}
     }
 
-    public BankAccount(int num, String nm)
+    public BankAccount(int acctNo, String personName)
     {
         balance = 100.0;
         dateCreated = new Date();
-        name = nm;
-        accountNo = num;
+        name = personName;
+        accountNo = acctNo;
         //OBJ54-J. Do not attempt to help the garbage collector by setting local reference variables to null
     }
 
