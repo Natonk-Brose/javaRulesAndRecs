@@ -22,6 +22,7 @@ public class floatingPointProg {
     *   @param array the array to be averaged
     *   @return the average value
     */
+   //MET50-J: Avoid ambiguous or confusing uses of overloading
     private static double average(double[] array) {
         //NUM02-J: Ensure that division and remainder operations do not result in divide-by-zero errors 
         // (array.length used to calculate the average)
@@ -52,6 +53,7 @@ public class floatingPointProg {
     * @return The converted double array
     *
     */
+    //MET50-J: Avoid ambiguous or confusing uses of overloading
     private static double[] convertToPositive(double[] array) {
         boolean length = false;
         if (array.length==0) {
@@ -84,6 +86,7 @@ public class floatingPointProg {
     * @param inputString The input string to be filtered
     * @return The converted string
      */
+    //MET50-J. Avoid ambiguous or confusing uses of overloading
     public static String filter(String inputString) {
         String str = Normalizer.normalize(inputString, Form.NFKC);
 
