@@ -13,25 +13,25 @@ public class TempFileDemo {
     public static void main(String[] args) {
         try {
 
-            File tempFile = File.createTempFile("tempfile", ".tmp");
+            File tempFile = File.createTempFile("tempfile", ".tmp"); // creating the temporary file
 
             // DCL50-J: Use visually distinct identifiers 
-            List<String> fileContent = new ArrayList<String>();
+            List<String> fileContent = new ArrayList<String>(); // list to hold content before writing to file
             Scanner scan = new Scanner(System.in);
-            CharBuffer input;
+            CharBuffer input; // to hold individual inputs
 
             // get input from the user to put into the temp file
             System.out.println("Enter strings; enter empty string to end");
             while (true) {
-                input = wrap(scan.nextLine());
-                if (input.toString().equals(""))
+                input = wrap(scan.nextLine()); // get input from the user
+                if (input.toString().equals("")) // en empty string ends the loop
                     break;
                 else
-                    fileContent.add(input.toString());
+                    fileContent.add(input.toString()); // add input to list
             }
             scan.close();
 
-            // write to the temporary file
+            // write everything in list to the temporary file
             try (BufferedWriter writer = Files.newBufferedWriter(tempFile.toPath())) {
                 for (String s : fileContent) {
                     writer.write(s);
@@ -41,7 +41,7 @@ public class TempFileDemo {
 
             System.out.println("Temporary file contents: ");
 
-            // read from the temporary file
+            // read from the temporary file and print contents
             FileInputStream fin = new FileInputStream(tempFile.getPath());    
             int data;
             // FIO08-J. Distinguish between characters or bytes read from a stream and -1
