@@ -1,3 +1,6 @@
+//IT355 Project 1
+//By: Curtis Bryant, Ryan Leone, Thomas Gray, Nathan Brose, Kaden Hargrove, Aneel Gillan
+
 import java.io.*;
 import java.nio.CharBuffer;
 import java.nio.file.Files;

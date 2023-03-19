@@ -14,6 +14,7 @@ public class BankAccount implements Cloneable, Serializable{
 
     private String SSN; // just for showing the next subclass
     public class BankAccountSSN{ // SER05: Do not serialize instances of inner classes
+
         
         //OBJ08-J: Do not expose private members of an outer class from within a nested class
         public String getSSN() {
@@ -58,6 +59,7 @@ public class BankAccount implements Cloneable, Serializable{
         dateCreated = new Date();
         name = nm;
         accountNo = num;
+        //OBJ54-J. Do not attempt to help the garbage collector by setting local reference variables to null
     }
 
     /**
@@ -95,6 +97,7 @@ public class BankAccount implements Cloneable, Serializable{
 
     public void setSSN(String SSN) {
         this.SSN = SSN;
+        //BJ50-J. Never confuse the immutability of a reference with that of the referenced object
     }
 
     /**

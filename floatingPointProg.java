@@ -212,6 +212,7 @@ public class floatingPointProg {
             }
             
            //FIO14-J: Perform proper cleanup at program termination
+           //OBJ52-J. Write garbage-collection-friendly code
             fileReader1.close();
             fileReader2.close();
             sc.close();
