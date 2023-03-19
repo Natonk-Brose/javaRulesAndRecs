@@ -11,8 +11,8 @@ public class BankAccountSet extends BankAccount {
     * @param The SSN as a String to be associated with the bank account
     *
     */
-    public BankAccountSet(String SSN) {
-        super.setSSN(SSN);
+    public BankAccountSet(String SSN, int accNo) {
+        super(accNo, SSN);
     }
     
     /**
