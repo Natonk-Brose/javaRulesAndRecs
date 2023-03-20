@@ -1,4 +1,4 @@
-package IT355.Rules;
+package rules.AneelRules;
 
 public class ERR08 {
     boolean nameConfirmation(String x, Object ApplicationName) {

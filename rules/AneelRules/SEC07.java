@@ -1,4 +1,4 @@
-package IT355.Rules;
+package rules.AneelRules;
 
 import java.security.CodeSource;
 import java.security.PermissionCollection;

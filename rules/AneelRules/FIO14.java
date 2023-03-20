@@ -1,4 +1,4 @@
-package IT355.Rules;
+package rules.AneelRules;
 
 import java.io.BufferedWriter;
 import java.io.File;

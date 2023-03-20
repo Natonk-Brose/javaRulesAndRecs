@@ -1,4 +1,4 @@
-package IT355.Rules;
+package rules.AneelRules;
 
 public class ENV06 {
     private static final boolean exampleCode = false;
