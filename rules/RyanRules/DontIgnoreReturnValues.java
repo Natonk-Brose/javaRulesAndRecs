@@ -1,3 +1,5 @@
+package rules.RyanRules;
+
 /**
  * A class that shows why not ignoring return values is important
  * EXP00-J: Do not ignore values returned by methods

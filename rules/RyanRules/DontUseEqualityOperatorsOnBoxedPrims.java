@@ -1,3 +1,5 @@
+package rules.RyanRules;
+
 /**
  * A class that shows the proper way to compare boxed primitives
  * EXP03-J: Do not use the equality operators when comparing values of boxed primitives

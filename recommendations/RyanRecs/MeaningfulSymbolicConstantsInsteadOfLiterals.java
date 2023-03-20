@@ -1,3 +1,5 @@
+package RyanRecs;
+
 /**
  * A class that shows how using meaningful constants can help when programming
  * DCL54-J: Use meaningful symbolic constants to represent literal values in program logic

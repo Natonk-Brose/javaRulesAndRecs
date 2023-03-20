@@ -1,3 +1,5 @@
+package rules.RyanRules;
+
 /**
  * A class that shows the proper way to check if a divisor is equal to 0 to make sure a divide-by-zero error does not occur
  * NUM02-J: Ensure that division and remainder operations do not result in divide-by-zero errors

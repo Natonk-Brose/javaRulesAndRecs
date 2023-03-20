@@ -1,3 +1,5 @@
+package RyanRecs;
+
 /**
  * A class that shows the how to change integers to floating points before floating-point operations
  * DCL52-J: Do not declare more than one variable per declaration

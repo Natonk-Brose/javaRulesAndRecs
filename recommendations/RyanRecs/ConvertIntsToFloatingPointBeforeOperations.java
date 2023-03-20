@@ -1,3 +1,5 @@
+package RyanRecs;
+
 /**
  * A class that shows the how to change integers to floating points before floating-point operations
  * NUM50-J: Convert integers to floating point for floating-point operations

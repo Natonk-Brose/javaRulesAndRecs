@@ -1,7 +1,7 @@
 /**
  * 
  */
-package recommendations;
+package ThomasRecs;
 
 /**
  * @author Thomas

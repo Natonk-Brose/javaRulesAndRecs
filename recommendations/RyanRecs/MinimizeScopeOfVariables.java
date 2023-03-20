@@ -1,3 +1,5 @@
+package RyanRecs;
+
 /**
  * A class that shows how minimizing a variable's scope helps readability
  * DCL53-J: Minimize the scope of variables

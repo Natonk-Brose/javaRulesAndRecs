@@ -2,7 +2,7 @@
  * 
  */
 
-package questions;
+package rules.ThomasRules;
 
 import java.text.Normalizer;
 import java.text.Normalizer.Form;

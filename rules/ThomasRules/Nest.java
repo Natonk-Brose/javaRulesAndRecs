@@ -1,7 +1,7 @@
 /**
  * 
  */
-package questions;
+package rules.ThomasRules;
 
 /**
  * @author Thomas Gray

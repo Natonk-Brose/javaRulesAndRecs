@@ -1,3 +1,5 @@
+package rules.RyanRules;
+
 /**
  * A class that shows the proper type of variable to use as a loop counter
  * NUM09-J: Do not use floating-point variables as loop counters
